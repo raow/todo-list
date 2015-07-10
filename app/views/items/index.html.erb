@@ -2,6 +2,12 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-primary">Open</button>
+  <button type="button" class="btn btn-danger">Over Due</button>
+  <button type="button" class="btn btn-success">Finished</button>
+  <button type="button" class="btn btn-default">All</button>
+</div>
 <table class="table table-striped">
   <thead>
     <tr>
