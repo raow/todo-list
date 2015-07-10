@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Usedschool</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>My TODO List</title>  
+  <%= stylesheet_link_tag    "application", :media => "all" %>  
+  <%= javascript_include_tag "application" %>  
+  <%= csrf_meta_tags %>  
+</head>  
+<body>  
+   
+    <div class="container-fluid">  
+      <div class="row-fluid">  
+        <div class="span9">  
+             <%= yield %>  
+          </div><!--/row-->  
+        </div><!--/span-->  
+      </div><!--/row-->  
+  
+      <hr>  
+  
+      <footer>  
+        <p>© By raox 2015</p>  
+      </footer>  
+  
+    </div><!--/.fluid-container-->  
+  
+    <!-- Le javascript  
+    ================================================== -->  
+    <!-- Placed at the end of the document so the pages load faster -->  
+    <script src="//cdnjs.bootcss.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  
+    <script src="//cdnjs.bootcss.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>  
+  
+  </body>  
+</html>  
